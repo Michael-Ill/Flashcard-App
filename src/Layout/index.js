@@ -9,6 +9,7 @@ import DeckView from "./Deck/DeckView";
 import DeckEdit from "./Deck/DeckEdit";
 import AddCard from "./Card/AddCard";
 import EditCard from "./Card/EditCard";
+import Home from "./Home";
 
 function Layout() {
   
@@ -22,6 +23,7 @@ function Layout() {
       <div className="container">
         <Switch>
           <Route exact path="/">
+            <Home decks={decks} setDecks={setDecks}/>
             <DeckList decks={decks} setDecks={setDecks}/>
           </Route>
           <Route path="/decks/new">

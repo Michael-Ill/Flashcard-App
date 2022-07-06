@@ -27,12 +27,9 @@ export const DeckList = () => {
   const list = decks.map((deck) => <Deck key={deck.id} deck={deck} />);
 
   return (
-    <Fragment>
-      <Link to={`/decks/new`} className="btn btn-secondary mb-2">
-        + Create
-      </Link>
+    <>
       {list}
-    </Fragment>
+    </>
   );
 };
 
