@@ -16,13 +16,14 @@ export const Deck = ({ deck }) => {
   };
 
   return (
+   
      <div className="row">
       <div className="col-sm-6">
         <div className="card">
           <div className="card-body">
             <span className="card-top d-flex justify-content-between" >
             <h3 className="card-title">{deck.name}</h3>
-            <p className="card-title">{deck.cards.length} Cards</p>
+            <p>{deck.cards.length} cards</p>
             </span>
             <p className="card-text">{deck.description}</p>
             <span className='card-buttons d-flex justify-content-between' >

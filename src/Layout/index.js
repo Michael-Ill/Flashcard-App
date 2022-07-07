@@ -18,7 +18,7 @@ function Layout() {
   const [card, setCard] = useState([])
 
   return (
-    <Fragment>
+    <>
       <Header />
       <div className="container">
         <Switch>
@@ -49,7 +49,7 @@ function Layout() {
           </Route>
         </Switch>
       </div>
-    </Fragment>
+    </>
   );
 }
 

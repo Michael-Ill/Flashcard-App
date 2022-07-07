@@ -2,8 +2,7 @@ import React from 'react'
 
 function CardForm({ changeFront, changeBack, handleSave, handleDoneCancel, cardValueFront, cardValueBack }) {
 
-    console.log(cardValueBack)
-
+    
     return (
       <form>
         <div className="mb-3">
@@ -11,6 +10,7 @@ function CardForm({ changeFront, changeBack, handleSave, handleDoneCancel, cardV
             <textarea
               type="text" className="form-control" 
               id="front"
+              required
               placeholder="Front side of the card"
               value={cardValueFront}
               rows="3"
@@ -18,7 +18,10 @@ function CardForm({ changeFront, changeBack, handleSave, handleDoneCancel, cardV
           </div>
         <div className="mb-3">
           <label className="form-label">Back</label>
-            <textarea className="form-control" id="back" 
+            <textarea 
+            className="form-control" 
+            id="back" 
+            required
             placeholder="Back side of card"
             value={cardValueBack}
             rows="3"

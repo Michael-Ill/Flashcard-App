@@ -43,6 +43,7 @@ const CreateDeck = () => {
             id="deck-name"
             rows="1"
             type="text"
+            required
             placeholder="Deck Name"
             onChange={handleNameChange}
           />
@@ -51,6 +52,7 @@ const CreateDeck = () => {
             className="form-control"
             id="deck-description"
             type="text"
+            required
             rows="3"
             placeholder="Brief description of the deck"
             onChange={handleDescriptionChange}
