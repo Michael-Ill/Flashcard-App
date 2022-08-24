@@ -1,5 +1,5 @@
 # Welcome to my Thinkful Flashcard App!
-## Hopefully you like it...
+## This app was a project within Thinkful where were had to use React to create a flashcard learning experience.
 
 <p align="center">
   <img 
